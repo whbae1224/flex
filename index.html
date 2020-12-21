@@ -5,34 +5,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container fixed top-0 left-0 flex flex-col">
-		<div class="container flex-row flex h-16 justify-center items-center">
+<body class="bg-gray-900">
+  <div class="container fixed top-0 left-0 flex flex-col border-b border-gray-700">
+		<div class="w-full flex-row flex h-16 justify-center items-center">
 			<i class="z-10 absolute left-0"> Back </i>
 			<span class="text-xl"> 내 변동 내역 </span>
 		</div>
 		<div class="container flex px-1 justify-center">
-			<div class="py-3 px-6 text-xl">
-				<span> 전체 </span>
+			<div class="py-3 px-3 mx-3 text-xl -mb-px">
+				<span class="text-gray-400"> 전체 </span>
 			</div>
-			<div class="py-3 px-6 text-xl text-gray-200">
-				<span> 신용점수 </span>
+			<div class="py-3 px-3 mx-3 text-xl -mb-px">
+				<span class="text-gray-400"> 신용점수 </span>
 			</div>
-			<div class="py-3 px-6 text-xl text-gray-200">
+			<div class="py-3 px-3 mx-3 text-xl -mb-px border-white border-b-2">
 				<span> 신용정보 </span>
 			</div>
+		</div>
 	</div>
-		<!-- <div class="container px-8">
-			<div>
-
+	<div class="p-4 mt-28 flex flex-col items-center">
+		<span class="text-gray-400 self-start"> 최근 1년 간 </span>
+		<div class="w-full bg-gray-800 flex rounded p-4">
+			<div class="flex flex-col flex-1 py-2 flex justify-center items-center">
+				<span class="text-gray-400"> 정보 변동 </span>
+				<div class="flex-row">
+					<span class="text-blue-600"> 23건 </span>
+					<span class="text-gray-400"> i </span>
+				</div>
 			</div>
-		</div> -->
+			<div class="flex w-0.5 bg-gray-700 h-auto"></div>
+			<div class="flex flex-col flex-1 py-2 flex justify-center items-center">
+				<span class="text-gray-400"> 금융사에서 정보조회 </span>
+				<div class="flex-row">
+					<span> 13건 </span>
+					<span class="text-gray-400"> i </span>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 <style>
-	body {
-		background-color: #161616;
-	}
 	i, h1, h2, h3, h4, h5, span {
 		color: white
 	}
