@@ -6,20 +6,22 @@
 		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900">
-  <div class="container fixed top-0 left-0 flex flex-col border-b border-gray-700">
+  <div class="container fixed top-0 left-0 flex flex-col border-b border-gray-700 bg-gray-900">
 		<div class="w-full flex-row flex h-16 justify-center items-center">
-			<i class="z-10 absolute left-0"> Back </i>
+			<div class="absolute left-0 px-4">
+				<image src="./back.png" width="10" class="text-white" />
+			</div>
 			<span class="text-xl"> 내 변동 내역 </span>
 		</div>
 		<div class="container flex px-1 justify-center">
-			<div class="py-3 px-3 mx-3 text-xl -mb-px">
-				<span class="text-gray-400"> 전체 </span>
+			<div class="py-3 px-5 mx-3 -mb-px">
+				<span class="text-gray-400 text-2xl"> 전체 </span>
 			</div>
-			<div class="py-3 px-3 mx-3 text-xl -mb-px">
-				<span class="text-gray-400"> 신용점수 </span>
+			<div class="py-3 px-5 mx-3 -mb-px">
+				<span class="text-gray-400 text-2xl"> 신용점수 </span>
 			</div>
-			<div class="py-3 px-3 mx-3 text-xl -mb-px border-gray-200 border-b-2">
-				<span class="text-gray-200"> 신용정보 </span>
+			<div class="py-3 px-5 mx-3 -mb-px border-gray-200 border-b-2">
+				<span class="text-gray-200 text-2xl"> 신용정보 </span>
 			</div>
 		</div>
 	</div>
@@ -61,7 +63,7 @@
 		<!-- ~ content item  -->
 		<!-- card2 ~ -->
 		<div class="w-full bg-gray-800 flex rounded-xl p-7 mt-4">
-			<div class="flex p-2 items-center"> 아이콘 </div>
+			<image src="./pkt.png" width="70" alt="복주머니" />
 			 <div class="flex flex-col p-2">
 				 <span class="text-gray-400"> 서재원님 신용등급으로 </span>
 				 <span class="text-gray-200 text-xl mt-1"> 받을 수 있는 대출 보기 </span>
