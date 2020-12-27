@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+		/>
+</head>
+<body class="bg-gray-100">
+  <div class="w-full fixed top-0 left-0 flex flex-col border-b border-gray-200 bg-white">
+		<div class="flex flex-row h-16 justify-center items-center">
+			<div class="absolute left-0 px-4">
+				<image src="./back2.png" width="10" height="auto" />
+			</div>
+			<span class="text-lg text-gray-800 font-medium"> 매도 비용 분석 </span>
+		</div>
+	</div>
+	<div class="w-full fixed bottom-0 left-0 flex border-t border-gray-200 bg-white">
+		<div class="flex flex-1 flex-col h-16 justify-center items-center">
+			<i class="fas fa-home text-gray-400 mb-1 text-lg"></i>
+			<span class="text-xs text-gray-400">홈</span>
+		</div>
+		<div class="flex flex-1 flex-col h-16 justify-center items-center">
+			<i class="fas fa-search text-gray-400 mb-1 text-lg"></i>
+			<span class="text-xs text-gray-400">검색</span>
+		</div>
+		<div class="flex flex-1 flex-col h-16 justify-center items-center">
+			<i class="fas fa-chart-area text-indigo-400 mb-1 text-lg"></i>
+			<span class="text-xs text-indigo-400">투자 분석</span>
+		</div>
+		<div class="flex flex-1 flex-col h-16 justify-center items-center">
+			<i class="fas fa-money-check-alt text-gray-400 mb-1 text-lg"></i>
+			<span class="text-xs text-gray-400">대출</span>
+		</div>
+		<div class="flex flex-1 flex-col h-16 justify-center items-center">
+			<i class="fas fa-bars text-gray-400 mb-1 text-lg"></i>
+			<span class="text-xs text-gray-400">메뉴</span>
+		</div>
+	</div>
+	<!-- contents ~ -->
+	<div class="flex flex-col min-h-screen">
+		<div class="px-4 py-8 flex flex-col items-center bg-white">
+			<div class="mt-14 flex-col flex self-start py-2">
+				<span class="text-gray-800 text-lg font-medium"> 매도 비용을 분석할 </span>
+				<span class="text-gray-800 text-lg font-medium"> 아파트 1개를 선택해주세요 </span>
+			</div>
+			<!-- card1 ~ -->
+			<div class="w-full flex rounded-md p-5 my-2 border-indigo-500 border">
+				<div class="flex flex-auto flex-col flex-row">
+					<div>
+						<span class="inline-flex text-indigo-500 font-semibold tracking-tight text-sm"> My home </span>
+						<span class="text-gray-400 text-sm"> 서울시 강남구 삼성동 </span>
+					</div>
+					<span class="mt-2 text-gray-900 font-semibold tracking-tight"> 삼성동 래미안 아파트 48평 </span>
+				</div>
+				<div class="flex items-center">
+					<i class="fas fa-check-circle text-indigo-500"></i>
+				</div>
+			</div>
+			<!-- ~ card1 -->
+			<!-- card2 ~ -->
+			<div class="w-full flex rounded-sm p-5 my-2 border-purple-500 border-2">
+				<div class="flex flex-auto flex-col flex-row">
+					<div>
+						<span class="inline-flex text-indigo-500 font-semibold tracking-tight text-sm"> My home </span>
+						<span class="text-gray-400 text-sm"> 서울시 강남구 삼성동 </span>
+					</div>
+					<span class="mt-2 text-gray-900 font-semibold tracking-tight"> 삼성동 래미안 아파트 48평 </span>
+				</div>
+				<div class="flex items-center">
+					<i class="fas fa-check-circle text-gray-400"></i>
+				</div>
+			</div>
+			<!-- ~ card2 -->
+			<div class="flex justify-center items-center mt-4">
+				<i class="fas fa-plus-circle text-indigo-500 text-4xl"></i>
+				<span class="px-2 font-semibold text-indigo-500 text-sm"> My Home 추가하기 </span>
+			</div>
+		</div>
+		<div class="flex flex-col flex-1 pb-20 px-4 justify-between items-center">
+			<div class="flex items-center py-4">
+				<span class="text-gray-400 font-medium text-xs mr-3"> 아직 고민 중이신가요? </span>
+				<div class="border rounded bg-white py-1 px-4 border-indigo-500">
+					<span class="text-xs font-semibold text-indigo-500"> 아파트 추천 </span>
+				</div>
+			</div>
+			<div class="flex self-stretch bg-indigo-500 py-2 rounded-sm justify-center">
+				<span class="font-medium"> 다음으로 </span>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+	i, h1, h2, h3, h4, h5, span {
+		color: white
+	}
+</style>
+</html>
