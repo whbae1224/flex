@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+  <div class="w-full fixed top-0 left-0 flex flex-col border-b border-gray-700 bg-gray-900">
+		<div class="flex flex-row flex h-16 justify-center items-center">
+			<div class="absolute left-0 px-4">
+				<image src="./back.png" width="10" height="auto" />
+			</div>
+			<span class="text-xl"> 내 변동내역 </span>
+		</div>
+		<div class="w-full flex px-1 justify-center">
+			<div class="py-3 px-3 mx-3 -mb-px">
+				<span class="text-gray-400 text-xl"> 전체 </span>
+			</div>
+			<div class="py-3 px-3 mx-3 -mb-px">
+				<span class="text-gray-400 text-xl"> 신용점수 </span>
+			</div>
+			<div class="py-3 px-3 mx-3 -mb-px border-gray-200 border-b-2">
+				<span class="text-gray-200 text-xl"> 신용정보 </span>
+			</div>
+		</div>
+	</div>
+	<!-- contents ~ -->
+	<div class="px-4 mt-32 flex flex-col items-center">
+		<div class="self-start py-2">
+			<span class="text-gray-400 text-xl"> 최근 1년간 </span>
+		</div>
+		<!-- card1 ~ -->
+		<div class="w-full bg-gray-800 flex rounded-xl p-7 my-4">
+			<div class="flex flex-col flex-1 py-3 flex justify-center items-center">
+				<span class="text-gray-400 text-sm"> 정보변동 </span>
+				<div class="flex flex-row items-center mt-1">
+					<span class="text-blue-600 text-3xl"> 23건 </span>
+					<span class="text-gray-600 px-1"> ? </span>
+				</div>
+			</div>
+			<div class="flex w-0.5 bg-gray-700 h-auto"></div>
+			<div class="flex flex-col flex-1 py-2 flex justify-center items-center">
+				<span class="text-gray-400 text-sm"> 금융사에서 정보조회 </span>
+				<div class="flex flex-row items-center mt-1">
+					<span class="text-3xl"> 13건 </span>
+					<span class="text-gray-600 px-1"> ? </span>
+				</div>
+			</div>
+		</div>
+		<!-- ~ card1 -->
+		<!-- content item ~  -->
+		<div class="w-full flex mt-3 py-6">
+			<div class="w-full flex">
+				<span class="px-2 pt-px flex-initial text-gray-200">11.28</span>
+				<div class="px-2 flex-col flex-auto">
+					<span class="flex text-blue-600 text-xl font-medium"> 대출계좌 개설 </span>
+					<span class="flex text-gray-500 font-normal"> 현대카드 </span>
+				</div>
+				<span class="px-2 pt-px flex-initial text-gray-200">한국신용정보원</span>
+			</div>
+		</div>
+		<!-- ~ content item  -->
+		<!-- card2 ~ -->
+		<div class="w-full bg-gray-800 flex rounded-xl p-7 mt-4 items-center">
+			<div class="w-16">
+				<image src="./pkt.png" alt="복주머니" />
+			</div>
+			 <div class="flex flex-col p-2">
+				 <span class="text-gray-400"> 서재원님 신용등급으로 </span>
+				 <span class="text-gray-200 text-xl mt-1"> 받을 수 있는 대출 보기 </span>
+			 </div>
+		</div>
+		<!-- card2 ~ -->
+		<!-- content item ~  -->
+		<div class="w-full flex mt-3 py-6">
+			<div class="w-full flex">
+				<span class="px-2 pt-px flex-initial text-gray-200">11.28</span>
+				<div class="px-2 flex-col flex-auto">
+					<span class="flex text-blue-600 text-xl font-medium"> 대출계좌 개설 </span>
+					<span class="flex text-gray-500 font-normal"> 롯데카드 </span>
+				</div>
+				<span class="px-2 pt-px flex-initial text-gray-200">한국신용정보원</span>
+			</div>
+		</div>
+		<!-- ~ content item  -->
+		<!-- content item ~  -->
+		<div class="w-full flex mt-3 py-6">
+			<div class="w-full flex">
+				<span class="px-2 pt-px flex-initial text-gray-200">11.27</span>
+				<div class="px-2 flex-col flex-auto">
+					<span class="flex text-xl font-medium"> 신용정보 조회 </span>
+					<span class="flex text-gray-500 font-normal"> 하나저축| 개설 목적 </span>
+				</div>
+				<span class="px-2 pt-px flex-initial text-gray-200">한국신용정보원</span>
+			</div>
+		</div>
+		<!-- ~ content item  -->
+		<!-- content item ~  -->
+		<div class="w-full flex mt-3 py-6">
+			<div class="w-full flex">
+				<span class="px-2 pt-px flex-initial text-gray-200">11.26</span>
+				<div class="px-2 flex-col flex-auto">
+					<span class="flex text-blue-600 text-xl font-medium"> 대출계좌 개설 </span>
+					<span class="flex text-gray-500 font-normal"> KB국민은행 </span>
+				</div>
+				<span class="px-2 pt-px flex-initial text-gray-200">한국신용정보원</span>
+			</div>
+		</div>
+		<!-- ~ content item  -->
+	</div>
+</body>
+<style>
+	i, h1, h2, h3, h4, h5, span {
+		color: white
+	}
+</style>
+</html>
