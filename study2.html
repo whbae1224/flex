@@ -9,10 +9,18 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
 		/>
 </head>
-<body class="bg-gray-100">
-  <div class="w-full fixed top-0 left-0 flex flex-col border-b border-gray-200 bg-white">
-		<div class="flex flex-row h-16 justify-center items-center">
-			<span class="text-lg text-gray-800 font-medium"> 투자 분석 </span>
+<body>
+  <div class="w-full fixed top-0 left-0 flex flex-col bg-white px-4">
+		<div class="flex h-16 items-center">
+			<span class="text-xl text-gray-800 font-semibold"> 투자 분석 </span>
+		</div>
+		<div class="flex mt-4">
+			<div class="flex flex-1 border-b justify-center border-indigo-400">
+				<span class="font-semibold py-2 text-indigo-400"> 비용 및 수익 분석 </span>
+			</div>
+			<div class="flex flex-1 border-b justify-center border-gray-200">
+				<span class="font-medium py-2 text-gray-400"> 분석 History </span>
+			</div>
 		</div>
 	</div>
 	<div class="w-full fixed bottom-0 left-0 flex border-t border-gray-200 bg-white">
@@ -39,54 +47,39 @@
 	</div>
 	<!-- contents ~ -->
 	<div class="flex flex-col min-h-screen">
-		<div class="px-4 py-8 flex flex-col items-center bg-white">
-			<div class="mt-14 flex-col flex self-start py-2">
-				<span class="text-gray-800 text-lg font-medium"> 매도 비용을 분석할 </span>
-				<span class="text-gray-800 text-lg font-medium"> 아파트 1개를 선택해주세요 </span>
-			</div>
+		<div class="px-4 pt-8 pb-16 flex flex-col bg-white">
+			<span class="mt-28 text-gray-400 text-sm font-medium"> 매매 정보 </span>
 			<!-- card1 ~ -->
-			<div class="w-full flex rounded-md p-5 my-2 border-indigo-500 border">
-				<div class="flex flex-auto flex-col flex-row">
-					<div>
-						<span class="inline-flex text-indigo-500 font-semibold tracking-tight text-sm"> My home </span>
-						<span class="text-gray-400 text-sm"> 서울시 강남구 삼성동 </span>
-					</div>
-					<span class="mt-2 text-gray-900 font-semibold tracking-tight"> 삼성동 래미안 아파트 48평 </span>
+			<div class="w-full flex rounded-md p-2 items-center h-16">
+				<i class="fas fa-chart-line text-2xl text-indigo-400"></i>
+				<div class="flex flex-auto flex-col items-start px-4">
+					<span class="text-gray-800 font-semibold">수익률 분석</span>
+					<span class="text-gray-400 text-xs mt-2">과거,현재,미래의 아파트 수익률 분석</span>
 				</div>
-				<div class="flex items-center">
-					<i class="fas fa-check-circle text-indigo-500"></i>
-				</div>
+				<i class="fas fa-chevron-right text-gray-400"></i>
 			</div>
 			<!-- ~ card1 -->
 			<!-- card2 ~ -->
-			<div class="w-full flex rounded-sm p-5 my-2 border-purple-500 border-2">
-				<div class="flex flex-auto flex-col flex-row">
-					<div>
-						<span class="inline-flex text-indigo-500 font-semibold tracking-tight text-sm"> My home </span>
-						<span class="text-gray-400 text-sm"> 서울시 강남구 삼성동 </span>
-					</div>
-					<span class="mt-2 text-gray-900 font-semibold tracking-tight"> 삼성동 래미안 아파트 48평 </span>
+			<div class="w-full flex rounded-md p-2 items-center h-16">
+				<i class="fas fa-exchange-alt text-2xl text-green-400"></i>
+				<div class="flex flex-auto items-start px-4">
+					<span class="text-gray-800 font-semibold">매도 비용 분석</span>
 				</div>
-				<div class="flex items-center">
-					<i class="fas fa-check-circle text-gray-400"></i>
-				</div>
+				<i class="fas fa-chevron-right text-gray-400"></i>
 			</div>
 			<!-- ~ card2 -->
-			<div class="flex justify-center items-center mt-4">
-				<i class="fas fa-plus-circle text-indigo-500 text-4xl"></i>
-				<span class="px-2 font-semibold text-indigo-500 text-sm"> My Home 추가하기 </span>
-			</div>
-		</div>
-		<div class="flex flex-col flex-1 pb-20 px-4 justify-between items-center">
-			<div class="flex items-center py-4">
-				<span class="text-gray-400 font-medium text-xs mr-3"> 아직 고민 중이신가요? </span>
-				<div class="border rounded bg-white py-1 px-4 border-indigo-500">
-					<span class="text-xs font-semibold text-indigo-500"> 아파트 추천 </span>
+			<!-- card3 ~ -->
+			<div class="w-full flex rounded-md p-2 items-center h-16">
+				<i class="fas fa-exchange-alt text-2xl text-green-400"></i>
+				<div class="flex flex-auto items-start px-4">
+					<span class="flex text-gray-800 font-semibold">매입 비용 분석</span>
+					<div class="flex border border-green-200 rounded-xl mx-2">
+						<span class="text-green-400 px-1 leading-normal text-xs font-semibold"> 오픈 예정 </span>
+					</div>
 				</div>
+				<i class="fas fa-chevron-right text-gray-400"></i>
 			</div>
-			<div class="flex self-stretch bg-indigo-500 py-2 rounded-sm justify-center">
-				<span class="font-medium"> 다음으로 </span>
-			</div>
+			<!-- ~ card3 -->
 		</div>
 	</div>
 </body>
